@@ -1,0 +1,46 @@
+.header-color {
+  background: #009FFF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.landing-grid{
+
+  background: #59C173;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.avatar-img{
+  height:250px;
+  padding-top:5em;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+  
+}
+
+.banner-text{
+  background-color: thistle;
+  opacity: .8;
+  width: 75%;
+  margin:auto;
+  border-radius: 10px; 
+}
+
+.banner-text h1{
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  padding: 0.5ex;
+  text-align: center;
+}
+
+.banner-text p{
+  color: white;
+  font-size: 60px;
+  padding: 1.5em;
+  text-align: center;
+}
