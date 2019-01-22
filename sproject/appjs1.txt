@@ -1,0 +1,34 @@
+import Main from './components/main';
+import {Link} from 'react-router-dom';
+
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+     
+
+<div className="demo-big-content">
+    <Layout>
+        <Header title="ManageMint" scroll>
+            <Navigation>
+                <Link to="/login">Login</Link>
+                <Link to="/signup">Sign up</Link>
+                
+            </Navigation>
+        </Header>
+       
+        <Content>
+            <div className="page-content" />
+            <Main/>
+        </Content>
+    </Layout>
+</div>
+  
+
+
+    );
+  }
+}
+
+ export default App;
