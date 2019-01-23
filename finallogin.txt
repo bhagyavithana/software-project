@@ -1,0 +1,78 @@
+import React, { Component } from 'react';
+ class login extends Component{
+    render(){
+        return(
+            <div className="App">
+            <header className="App-header">
+                <h1 className="App-title"> Login</h1>
+            </header>
+            <div className="container">
+
+            <form className="form-horizontal" id="signup" align="center" onSubmit={this.onSubmit} method="get" action="">
+           <legend></legend>
+              <fieldset >
+                <div className="form-group" align="center">
+                     <input type="text"
+                      className="form-control" 
+                      id="first" 
+                      name="First Name"
+                      placeholder="First Name" 
+                      ref="inputfirstname"
+                       />
+                  </div>
+                  <div className="form-group" align="center">
+                      <input type="text"
+                       className="form-control"   
+                       id="last" 
+                       name="Last Name" 
+                       placeholder="Last Name"
+                       ref="inputlastname"
+                          />
+                  </div>
+                  <div className="form-group" align="center">
+                      <input type="email" 
+                      className="form-control"  
+                      id="email" 
+                      name="Email" 
+                      placeholder="Email" 
+                      ref="inputemail"
+                        />
+                  </div> 
+                  <div className="form-group" align="center">
+                      <input type="password" 
+                      className="form-control"  
+                      id="password" 
+                      name="Password" 
+                      placeholder="Password"  
+                      ref="inputpassword"
+                          />
+                  </div>    
+                  </fieldset> 
+                  <fieldset>
+          <div className="signup-button">
+        <button type="submit" className="btn-primary" id="signup-button"  >
+          Login
+        </button>
+      </div>
+    </fieldset> 
+  </form>
+ 
+            
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        )
+    }
+}
+export default login;
