@@ -1,0 +1,92 @@
+import React, { Component} from 'react';
+import {browserHistory} from 'react-router';
+
+ class createproject extends Component{
+    onNavigateviewproject(){
+        browserHistory.push("/viewproject");
+        
+          }
+          onNavigateviewdiagrams(){
+            browserHistory.push("/viewdiagrams");
+            
+              }
+            
+
+
+
+    render(){
+        return(
+       
+           
+            
+
+                
+   <div>
+      
+
+
+
+     
+
+
+
+      <button className="button">create project</button>   
+      <button onClick={this.onNavigateviewproject} className="buttontwo">view project</button>    
+      <button onClick={this.onNavigateviewdiagrams} className="buttonthree">view diagrams</button>  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+        </div>
+        )
+    }}
+        
+        export default createproject;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+          
+           
+     
+    
+    
