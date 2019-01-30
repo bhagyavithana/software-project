@@ -1,0 +1,101 @@
+import React, { Component } from 'react';
+import {browserHistory} from 'react-router';
+ class pmcreateproject extends Component{
+  onNavigateaddmembers(){
+    browserHistory.push("/addmembers");
+    
+      }
+
+
+    render(){
+        return(
+       
+           
+            
+
+                
+                 
+          <div className="body5" style={{top:'0', bottom:'0', left:'0', right:'0', position: 'absolute'}}>
+     
+           
+          <div>
+          <div className="App">
+      <header className="App-header">
+          <h1 className="App-title"> create project</h1>
+      </header>
+           <div className="container">
+           
+            <form className="form-horizontal" id="signup" align="center" onSubmit={this.onSubmit} method="get" action="">
+           <legend></legend>
+              <fieldset >
+                <div className="form-group" align="center">
+                     <input type="text"
+                      className="form-control" 
+                      id="first" 
+                      name="project Name"
+                      placeholder="project Name" 
+                      ref="inputprojectname"
+                       />
+                  </div>
+                    <div className="form-group" align="center">
+                      <input type="text"
+                       className="form-control"   
+                       id="last" 
+                       name="client Name" 
+                       placeholder="client Name"
+                       ref="inputclientname"
+                          />
+                  </div>
+                    <div className="form-group" align="center">
+                      <input type="email" 
+                      className="form-control"  
+                      id="email" 
+                      name="Email" 
+                      placeholder="Email" 
+                      ref="inputemail"
+                        />
+                  
+                  <div class="form-group">
+      <label htmlFor="exampleSelect1">Choose number of members</label>
+      <select class="form-control" id="exampleSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>  
+                    
+                       
+                   
+                  </div>
+                  </fieldset> 
+                  <fieldset>
+          <div className="signup-button">
+        <button onClick={this.onNavigateaddmembers} className="btn-primary1" id="signup-button"  >
+         create project
+        </button>
+      </div>
+    </fieldset> 
+  </form>
+ 
+            
+  </div>
+  </div>
+</div>
+    
+      
+      
+     
+     
+     
+      </div>
+
+
+
+
+  
+   )
+}}
+   
+   export default pmcreateproject;

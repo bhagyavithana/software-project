@@ -1,0 +1,87 @@
+import React, { Component } from 'react';
+//import {Grid,Cell} from 'react-mdl';
+import {browserHistory} from 'react-router';
+
+ class addmembers extends Component{
+   
+    onNavigateDone(){
+        browserHistory.push("/assigntasks");
+        
+          }
+    
+
+
+
+    render(){
+        return(
+       
+           
+            
+
+                
+       
+            <div className="body6" style={{top:'0', bottom:'0', left:'0', right:'0', position: 'absolute'}}>
+     
+           
+             
+     <div>
+          <div className="App">
+      <header className="App-header">
+          <h1 className="App-title"> create project</h1>
+      </header>
+           <div className="container">
+           
+            <form className="form-horizontal" id="signup" align="center" onSubmit={this.onSubmit} method="get" action="">
+           <legend></legend>
+              <fieldset >
+                <div className="form-group" align="center">
+                     <input type="text"
+                      className="form-control" 
+                      id="user" 
+                      name="user Name"
+                      placeholder="user Name" 
+                      ref="inputusername"
+                       />
+                  </div>
+                    <div className="form-group" align="center">
+                      <input type="text"
+                       className="form-control"   
+                       id="email" 
+                       name="email" 
+                       placeholder="email"
+                       ref="inputemail"
+                          />
+                  
+                  
+                
+                    
+                       
+                   
+                  </div>
+                  </fieldset> 
+                  <fieldset>
+          <div className="signup-button">
+        <button onClick={this.onNavigateDone} className="btn-primary2" id="signup-button"  >
+         create project
+        </button>
+      </div>
+    </fieldset> 
+  </form>
+ 
+            
+  </div>
+  </div>
+
+     
+
+     </div>
+      
+        
+        </div>
+       
+
+   
+   )
+}}
+   
+   export default addmembers;

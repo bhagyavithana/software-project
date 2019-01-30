@@ -1,0 +1,26 @@
+import React, { Component } from 'react';
+import {Grid,Cell} from 'react-mdl';
+ class landingpage extends Component{
+    render(){
+        return(
+            <div className="body7" style={{top:'0', bottom:'0', left:'0', right:'0', position: 'absolute'}}>
+            <Grid className="landing-grid">
+            <Cell col={12}>
+           
+
+
+            <div className="banner-text">
+            <h1>welcome to ManageMint </h1>
+            <hr/>
+            <p>project management tool</p>
+            </div>
+
+
+             </Cell>
+            </Grid>
+                
+                </div>
+        )
+    }
+}
+export default landingpage;
